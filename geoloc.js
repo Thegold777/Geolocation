@@ -22,6 +22,10 @@ function locationSuccess(data) {
 
 }
 
+function locationError() {
+    writeOutput("При получении местоположения произошла ошибка");
+  }
+
 function writeOutput(message) {
     output.innerHTML = `<p>${message}</p>`;
 }
